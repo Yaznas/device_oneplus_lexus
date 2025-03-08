@@ -1,0 +1,26 @@
+cc_prebuilt_binary {
+     name: "RemovePackages",
+     overrides: [
+         "AICorePrebuilt-aicore_20250130.00_RC01",
+         "Accord",
+         "arcore-1.48",
+         "CalculatorGooglePrebuilt_85006267",
+         "CalendarGooglePrebuilt",
+         "Chrome-Stub",
+         "CredentialManagerPrebuilt_credentialmanager.android_20250404.06_p0",
+         "Drive",
+         "FilesPrebuilt",
+         "GeminiShell_227",
+         "Gmail2",
+         "Maps",
+         "Photos",
+         "PlayAutoInstallConfig",
+         "RelationshipsPrebuilt-301",
+         "YouTube",
+     ],
+     strip: {
+ 		none: true,
+ 	},
+    srcs: ["RemovePackages"],
+    check_elf_files: false,
+ }

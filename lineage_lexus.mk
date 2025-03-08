@@ -32,3 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=CPH2707
 
 TARGET_DISABLE_EPPE := true
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+  RemovePackages

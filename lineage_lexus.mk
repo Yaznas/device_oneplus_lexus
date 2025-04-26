@@ -32,3 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 DERPFEST_BUILD_TYPE := Official
 TARGET_DISABLE_EPPE := true
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+  RemovePackages

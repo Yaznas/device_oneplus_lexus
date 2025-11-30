@@ -29,3 +29,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2709 \
     SystemDevice=OP6131L1 \
     SystemName=CPH2709
+
+DERPFEST_BUILD_TYPE := Official
+TARGET_DISABLE_EPPE := true

@@ -13,6 +13,8 @@ $(call inherit-product, device/oneplus/lexus/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+DERPFEST_BUILD_TYPE := Official
+
 PRODUCT_NAME := lineage_lexus
 PRODUCT_DEVICE := lexus
 PRODUCT_MANUFACTURER := OnePlus

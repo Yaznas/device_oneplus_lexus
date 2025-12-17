@@ -30,6 +30,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.oplus.lexus.rc
 
+# IR
+$(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
+
 # LiveDisplay
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 

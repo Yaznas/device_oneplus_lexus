@@ -21,6 +21,9 @@ TARGET_SCREEN_WIDTH := 1272
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946292893219971.xml
 
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,144)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
 # Fingerprint
 $(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
 

@@ -36,3 +36,14 @@ PRODUCT_PACKAGES += \
   RemovePackages
 
 TARGET_DISABLE_EPPE := true
+
+# GMS
+WITH_GMS_COMMS_SUITE := false
+
+PRODUCT_COPY_FILES += \
+      vendor/gms/common/proprietary/product/etc/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml
+
+PRODUCT_PACKAGES += \
+      GoogleDialer \
+      PrebuiltBugle \
+      com.google.android.dialer.support

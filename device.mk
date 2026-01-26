@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
+# Performance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Pluskey
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl

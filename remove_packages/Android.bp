@@ -6,16 +6,20 @@ android_app_import {
 
      overrides: [
          "Accord",
+         "AICorePrebuilt-aicore_20250130.00_RC01",
+         "arcore-1.48",
          "CalculatorGooglePrebuilt_85006267",
          "CalendarGooglePrebuilt",
          "Chrome-Stub",
+         "CredentialManagerPrebuilt_credentialmanager.android_20250404.06_p0",
          "Drive",
          "FilesPrebuilt",
-         "Gemini",
+         "GeminiShell_227",
          "Gmail2",
          "Maps",
          "Photos",
          "PlayAutoInstallConfig",
+         "RelationshipsPrebuilt-301",
          "YouTube",
      ],
  	dex_preopt: {

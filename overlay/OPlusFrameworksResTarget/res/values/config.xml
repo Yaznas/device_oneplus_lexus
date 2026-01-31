@@ -9,7 +9,7 @@
     <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">400</integer>
+    <integer name="config_brightness_ramp_rate_fast">300</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
     <integer name="config_brightness_ramp_rate_slow">50</integer>
@@ -55,7 +55,7 @@
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">750</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">30</integer>
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
@@ -88,8 +88,9 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
-        <item>6</item>
-        <item>10</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
         <item>20</item>
         <item>30</item>
         <item>40</item>
@@ -138,19 +139,20 @@
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>6.0</item>    <!--      0 - 1     -->
-        <item>12.0</item>   <!--      1 - 6     -->
-        <item>30.0</item>   <!--      6 - 10    -->
-        <item>100.0</item>  <!--     10 - 20    -->
-        <item>140.0</item>  <!--     20 - 30    -->
-        <item>160.0</item>  <!--     30 - 40    -->
-        <item>180.0</item>  <!--     40 - 50    -->
-        <item>200.0</item>  <!--     50 - 60    -->
-        <item>230.0</item>  <!--     60 - 70    -->
-        <item>240.0</item>  <!--     70 - 80    -->
-        <item>250.0</item>  <!--     80 - 90    -->
-        <item>260.0</item>  <!--     90 - 100   -->
-        <item>270.0</item>  <!--    100 - 150   -->
-        <item>280.0</item>  <!--    150 - 200   -->
+        <item>40.0</item>   <!--      1 - 4     -->
+        <item>65.0</item>   <!--      4 - 8     -->
+        <item>80.0</item>   <!--      8 - 12    -->
+        <item>140.0</item>  <!--     12 - 20    -->
+        <item>150.0</item>  <!--     20 - 30    -->
+        <item>170.0</item>  <!--     30 - 40    -->
+        <item>200.0</item>  <!--     40 - 50    -->
+        <item>230.0</item>  <!--     50 - 60    -->
+        <item>250.0</item>  <!--     60 - 70    -->
+        <item>260.0</item>  <!--     70 - 80    -->
+        <item>270.0</item>  <!--     80 - 90    -->
+        <item>275.0</item>  <!--     90 - 100   -->
+        <item>280.0</item>  <!--    100 - 150   -->
+        <item>285.0</item>  <!--    150 - 200   -->
         <item>290.0</item>  <!--    200 - 300   -->
         <item>300.0</item>  <!--    300 - 400   -->
         <item>310.0</item>  <!--    400 - 500   -->

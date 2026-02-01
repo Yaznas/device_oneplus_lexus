@@ -34,3 +34,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Remove Packages
 PRODUCT_PACKAGES += \
   RemovePackages
+
+TARGET_DISABLE_EPPE := true

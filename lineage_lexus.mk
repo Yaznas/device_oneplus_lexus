@@ -30,3 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2707 \
     SystemDevice=OP5E93L1 \
     SystemName=CPH2707
+
+TARGET_DISABLE_EPPE := true

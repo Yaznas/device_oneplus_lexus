@@ -1,9 +1,5 @@
-android_app_import {
+cc_prebuilt_binary {
      name: "RemovePackages",
-     apk: "DebloatDummy.apk",
-     presigned: true,
-     preprocessed: true,
-
      overrides: [
          "Accord",
          "AICorePrebuilt-aicore_20250130.00_RC01",
@@ -22,7 +18,9 @@ android_app_import {
          "RelationshipsPrebuilt-301",
          "YouTube",
      ],
- 	dex_preopt: {
- 		enabled: false,
+     strip: {
+ 		none: true,
  	},
+    srcs: ["RemovePackages"],
+    check_elf_files: false,
  }
